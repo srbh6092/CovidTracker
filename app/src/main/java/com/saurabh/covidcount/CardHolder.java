@@ -3,6 +3,8 @@ package com.saurabh.covidcount;
 import android.view.View;
 import android.widget.TextView;
 
+import com.github.mikephil.charting.charts.PieChart;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -15,6 +17,7 @@ public class CardHolder extends RecyclerView.ViewHolder implements View.OnClickL
     public TextView mRecovered;
     public TextView mDeath;
     public TextView mActive;
+    public PieChart mPieChart;
 
     public CardHolder(@NonNull View itemView) {
         super(itemView);
@@ -27,6 +30,7 @@ public class CardHolder extends RecyclerView.ViewHolder implements View.OnClickL
         mRecovered = itemView.findViewById(R.id.recovered);
         mDeath = itemView.findViewById(R.id.death);
         mActive = itemView.findViewById(R.id.active);
+        mPieChart = itemView.findViewById(R.id.pieChart);
 
     }
 
